@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\catpy\\projects\\MyAssembly\\MyAssembly.csproj",
+      "projectUniqueName": "C:\\Users\\catpy\\Documents\\GitHub\\MyAssembly\\MyAssembly.csproj",
       "projectName": "MyAssembly",
-      "projectPath": "C:\\Users\\catpy\\projects\\MyAssembly\\MyAssembly.csproj",
+      "projectPath": "C:\\Users\\catpy\\Documents\\GitHub\\MyAssembly\\MyAssembly.csproj",
       "packagesPath": "C:\\Users\\catpy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\catpy\\projects\\MyAssembly\\obj\\",
+      "outputPath": "C:\\Users\\catpy\\Documents\\GitHub\\MyAssembly\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,1 +1,1 @@
-"# MyAssembly" 
+# MyAssembly
