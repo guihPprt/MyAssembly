@@ -13,4 +13,4 @@ OUTPUT:
 
     Hello World
 
-# [API](docs\API.md)
+# [API](docs/API.md)
