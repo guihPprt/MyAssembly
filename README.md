@@ -1,9 +1,6 @@
 # MyAssembly
 
-<code>
-    T.PUT
-    >Hello World<
+                T.PUT
+                >Hello World<
 
-    T.WRT 1
-
-</code>
+                T.WRT 1
