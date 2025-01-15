@@ -1,0 +1,25 @@
+{CLS}
+
+T.PUT
+>You are older than 18<
+
+T.PUT
+>You are younger than 18<
+
+T.PUT
+>Input your age<
+
+PUT 18
+
+: OLDER
+T.WRT 1
+END
+
+: YOUNGER
+T.WRT 2
+END
+
+T.WRT 3
+INP
+
+IF 2 LT 1 YOUNGER OLDER

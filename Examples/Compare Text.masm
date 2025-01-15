@@ -1,0 +1,29 @@
+{CLS}
+
+T.PUT
+>Hello World<
+
+T.PUT
+>Is equals<
+
+T.PUT
+>Is diferent<
+
+: EQUALS
+T.WRT 2
+END
+
+: DIFERENT
+T.WRT 3
+END
+
+
+
+T.PUT
+>Input an text<
+
+T.WRT 4
+
+T.INP
+
+T.IF 5 EQ 1 EQUALS DIFERENT

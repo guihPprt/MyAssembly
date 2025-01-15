@@ -1,0 +1,39 @@
+{CLS}
+
+PUT 15 \1\
+PUT 20 \2\
+
+SUM 1 2 \3\
+SUB 1 2 \4\
+MUL 1 2 \5\
+DIV 1 2 \6\
+
+T.PUT \1\
+>Sum<
+
+T.PUT \2\
+>Subtraction<
+
+T.PUT \3\
+>Multiplication<
+
+T.PUT \4\
+>Division<
+
+T.WRT 1
+WRT 3
+
+{SEP}
+
+T.WRT 2
+WRT 4
+
+{SEP}
+
+T.WRT 3
+WRT 5
+
+{SEP}
+
+T.WRT 4
+WRT 6

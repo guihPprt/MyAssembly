@@ -64,7 +64,7 @@ namespace MyAssembly
                         var text = File.ReadAllLines(cache);
                         for(int i = 0; i < text.Length; i++)
                         {
-                            if(i+1 == int.Parse(split[1]))
+                            if(i+1 == float.Parse(split[1]))
                             {
                                 Console.WriteLine(text[i]);                                
                             }
@@ -77,9 +77,9 @@ namespace MyAssembly
                     {
                         var text = File.ReadAllLines(cache);
 
-                        int n1 = int.Parse(text[int.Parse(split[1])-1]);
-                        int n2 = int.Parse(text[int.Parse(split[2])-1]);
-                        int sum = n1+n2;
+                        float n1 = float.Parse(text[int.Parse(split[1])-1]);
+                        float n2 = float.Parse(text[int.Parse(split[2])-1]);
+                        float sum = n1+n2;
                         File.AppendAllText(cache, sum.ToString() + "\n");
                     }
 
@@ -87,9 +87,9 @@ namespace MyAssembly
                     {
                         var text = File.ReadAllLines(cache);
 
-                        int n1 = int.Parse(text[int.Parse(split[1])-1]);
-                        int n2 = int.Parse(text[int.Parse(split[2])-1]);
-                        int sub = n1-n2;
+                        float n1 = float.Parse(text[int.Parse(split[1])-1]);
+                        float n2 = float.Parse(text[int.Parse(split[2])-1]);
+                        float sub = n1-n2;
                         File.AppendAllText(cache, sub.ToString() + "\n");
                     }
 
@@ -97,9 +97,9 @@ namespace MyAssembly
                     {
                         var text = File.ReadAllLines(cache);
 
-                        int n1 = int.Parse(text[int.Parse(split[1])-1]);
-                        int n2 = int.Parse(text[int.Parse(split[2])-1]);
-                        int div = n1/n2;
+                        float n1 = float.Parse(text[int.Parse(split[1])-1]);
+                        float n2 = float.Parse(text[int.Parse(split[2])-1]);
+                        float div = n1/n2;
                         File.AppendAllText(cache, div.ToString() + "\n");
                     }
 
@@ -107,9 +107,9 @@ namespace MyAssembly
                     {
                         var text = File.ReadAllLines(cache);
 
-                        int n1 = int.Parse(text[int.Parse(split[1])-1]);
-                        int n2 = int.Parse(text[int.Parse(split[2])-1]);
-                        int mul = n1*n2;
+                        float n1 = float.Parse(text[int.Parse(split[1])-1]);
+                        float n2 = float.Parse(text[int.Parse(split[2])-1]);
+                        float mul = n1*n2;
                         File.AppendAllText(cache, mul.ToString() + "\n");
                     }
                 
@@ -151,7 +151,7 @@ namespace MyAssembly
                         var text = File.ReadAllLines(text_cache);
                         for(int i = 0; i < text.Length; i++)
                         {
-                            if(i+1 == int.Parse(split[1]))
+                            if(i+1 == float.Parse(split[1]))
                             {
                                 Console.WriteLine(text[i]);                                
                             }
@@ -173,7 +173,7 @@ namespace MyAssembly
                         if(is_goto == false)
                         {
                             try{
-                                int number = int.Parse(Console.ReadLine());
+                                float number = float.Parse(Console.ReadLine());
                                 File.AppendAllText(cache,number.ToString() + "\n");
                             }
                             catch(Exception e)
@@ -251,11 +251,11 @@ namespace MyAssembly
                         string value2 = "'";
                         for(int i = 0; i < text.Length; i++)
                         {
-                            if(i+1 == int.Parse(split[1]))
+                            if(i+1 == float.Parse(split[1]))
                             {
                                 value1 = text[i];
                             }
-                            if(i+1 == int.Parse(split[3]))
+                            if(i+1 == float.Parse(split[3]))
                             {
                                 value2 = text[i];
                             }
@@ -296,7 +296,7 @@ namespace MyAssembly
 
                             break;
                             case "LT":
-                                if(int.Parse(value1) < int.Parse(value2))
+                                if(float.Parse(value1) < float.Parse(value2))
                                 {
                                     ant_ln = ln;
 
@@ -327,7 +327,7 @@ namespace MyAssembly
                                 }
                             break;
                             case "MT":
-                                if(int.Parse(value1) > int.Parse(value2))
+                                if(float.Parse(value1) > float.Parse(value2))
                                 {
                                     ant_ln = ln;
 
@@ -359,7 +359,7 @@ namespace MyAssembly
                             break;
 
                             case "LE":
-                                if(int.Parse(value1) <= int.Parse(value2))
+                                if(float.Parse(value1) <= float.Parse(value2))
                                 {
                                     ant_ln = ln;
 
@@ -390,7 +390,7 @@ namespace MyAssembly
                                 }
                             break;
                             case "ME":
-                                if(int.Parse(value1) >= int.Parse(value2))
+                                if(float.Parse(value1) >= float.Parse(value2))
                                 {
                                     ant_ln = ln;
 
@@ -420,8 +420,9 @@ namespace MyAssembly
                                     }
                                 }
                             break;
-                            case "DI":
-                                if(int.Parse(value1) != int.Parse(value2))
+                            case "DIF":
+                            
+                                if(float.Parse(value1) != float.Parse(value2))
                                 {
                                     ant_ln = ln;
 
@@ -463,11 +464,11 @@ namespace MyAssembly
                         string value2 = "";
                         for(int i = 0; i < text.Length; i++)
                         {
-                            if(i+1 == int.Parse(split[1]))
+                            if(i+1 == float.Parse(split[1]))
                             {
                                 value1 = text[i];
                             }
-                            if(i+1 == int.Parse(split[3]))
+                            if(i+1 == float.Parse(split[3]))
                             {
                                 value2 = text[i];
                             }
@@ -571,7 +572,7 @@ namespace MyAssembly
 
                                 Environment.Exit(0x04);
                             }
-                            if(rep_value < int.Parse(split[1]))
+                            if(rep_value < float.Parse(split[1]))
                             {
                                 ant_ln = ln-1;
                             }
@@ -606,7 +607,8 @@ namespace MyAssembly
                 catch(Exception e)
                 {
                     Console.WriteLine("Error at line > "+ln.ToString()+" <");
-                    Console.WriteLine(e);
+                    //Console.WriteLine(e);
+                    Environment.Exit(0x00);
                 }
             }
             
