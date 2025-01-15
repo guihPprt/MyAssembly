@@ -53,7 +53,7 @@ These files are:
 
 ### 4. Conditions
 
-1. Antes de verificar uma condicao primeiro precisamos definir blocos de codigo, esses blocos de codigos vao ser a acao que vai ser realizada se a condicao e verdadeira ou falsa
+1. Before checking a condition, we first need to define code blocks. These code blocks will be the actions that will be performed if the condition is true or false.
 
    ![alt text](image-9.png)
 
@@ -64,3 +64,60 @@ These files are:
    ![alt text](image-11.png)
 
    ![alt text](image-12.png)
+
+## Text
+
+### 1. Add text to memory
+
+1. To add a text to memory we use the code `T.PUT`
+
+   ![alt text](image-13.png)
+
+   You need to place the text between `><` on the line below the `T.PUT`
+
+### 2. Show text in the console
+
+1. To show text in the console, you need to add it to memory first. Then, retrieve it from memory and display it using the `T.WRT` command.
+
+   ![alt text](image-14.png)
+   ![alt text](image-15.png)
+
+   We can handle multiple texts in memory and display them in the order we want.
+
+   ![alt text](image-16.png)
+   ![alt text](image-17.png)
+
+### 3. Handle user inputs
+
+1. To handle user inputs, we use the `T.INP` command. It is placed in the same way as the `T.PUT` command, meaning its address depends on the position it was placed in the code.
+
+   ![alt text](image-19.png)
+   ![alt text](image-18.png)
+
+### 4. Conditions
+
+### 4. Conditions
+
+1. Conditions work the same way as number conditions.
+
+   ![alt text](image-20.png)
+
+   The only difference is using `T.IF` instead of `IF`.
+
+   ![alt text](image-21.png)
+
+## Other statement
+
+<code>{SEP}</code> : Add a separator in output
+
+![alt text](image-22.png)
+
+<code>{CLS}</code> : Clear the output
+
+<code>GOTO</code> : Go to the block code named
+
+![alt text](image-24.png)
+
+<code>REP</code> : Repeat the block code n of times
+
+![alt text](image-25.png)
